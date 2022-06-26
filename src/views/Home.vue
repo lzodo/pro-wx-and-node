@@ -2,7 +2,7 @@
     <div class="bar-home">
         <Header></Header>
         <LyTab></LyTab>
-        <div>首页</div>
+        <Swiper></Swiper>
         <TabBar pagePath="/home"></TabBar>
     </div>
 </template>
@@ -11,12 +11,14 @@
 import TabBar from "@/components/TabBar/index.vue";
 import Header from "@/components/Header/index.vue";
 import LyTab from "@/components/LyTab/index.vue";
+import Swiper from "@/components/Swiper/Swiper.vue"
 export default {
     name: "Home",
     components: {
         TabBar,
         Header,
-        LyTab
+        LyTab,
+        Swiper
     },
     mounted(){
       console.log(this.mindate)

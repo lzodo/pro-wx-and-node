@@ -7,7 +7,9 @@ import './styles/app.scss'
 // css 初始化
 import 'normalize.css/normalize.css'
 Vue.config.productionTip = false
-
+import $ from "jquery"
+window.$ = $;
+console.log($)
 import "@/mixins/mixins.global.js";
 
 import "./rem"
