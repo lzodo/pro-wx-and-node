@@ -1,0 +1,14 @@
+
+//长文字省略
+.ellipsistable {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.flexc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
