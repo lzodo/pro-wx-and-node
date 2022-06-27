@@ -12,6 +12,7 @@ import TabBar from "@/components/TabBar/index.vue";
 import Header from "@/components/Header/index.vue";
 import LyTab from "@/components/LyTab/index.vue";
 import Swiper from "@/components/Swiper/Swiper.vue"
+//插件 better-scroll 滚动插件，给需要滚动的父元素添加相应的类
 export default {
     name: "Home",
     components: {
