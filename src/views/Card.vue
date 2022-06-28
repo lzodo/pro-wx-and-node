@@ -1,6 +1,8 @@
 <template>
-    <div class="bar-card">
-        <div>购物车</div>
+    <div class="bar-card bar-page-warp">
+        <div class="bar-main">
+            <div>购物车</div>
+        </div>
         <TabBar pagePath="/card"></TabBar>
     </div>
 </template>

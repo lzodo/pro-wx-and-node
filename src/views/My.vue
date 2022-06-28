@@ -1,6 +1,8 @@
 <template>
-    <div class="bar-my">
-        <div>我的</div>
+    <div class="bar-my bar-page-warp">
+        <div class="bar-main">
+            <div>我的</div>
+        </div>
         <TabBar pagePath="/my"></TabBar>
     </div>
 </template>

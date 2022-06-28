@@ -3,16 +3,22 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+                <img src="../../assets/images/banner1.jpg"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="../../assets/images/banner2.jpg"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="../../assets/images/banner3.jpg"/>
+            </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
@@ -62,5 +68,9 @@ export default {
     background: #eee;
     width: 100%;
     height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 </style>

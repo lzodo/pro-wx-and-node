@@ -49,7 +49,7 @@ export default {
 <style lang="scss" scoped>
 .TabBar {
     display: flex;
-    position: fixed;
+    // position: fixed;
     bottom: 0;
     left: 0;
     // background: #f00;

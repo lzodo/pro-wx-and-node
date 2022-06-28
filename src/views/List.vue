@@ -1,6 +1,8 @@
 <template>
-    <div class="bar-list">
-        <div>列表</div>
+    <div class="bar-list bar-page-warp">
+        <div class="bar-main">
+            <div>列表</div>
+        </div>
         <TabBar pagePath="/list"></TabBar>
     </div>
 </template>
