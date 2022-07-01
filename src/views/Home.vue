@@ -22,8 +22,14 @@ import HomeIcons from "@/components/HomeIcons/index.vue"
 //插件 better-scroll 滚动插件，给需要滚动的父元素添加相应的类
 import BScroll from "better-scroll";
 
+import { getTopBar } from "@/api/home/index.js"
 export default {
     name: "Home",
+    data(){
+        return {
+            topBarData:[],
+        }
+    },
     components: {
         TabBar,
         Header,
@@ -32,6 +38,9 @@ export default {
         HomeIcons
     },
     mounted() {
+        getTopBar().then((res)=>{
+            this.topBarData = res.list;
+        })
         const bs = new BScroll(".wrapper", {
             // pullUpLoad: true,
             // scrollbar: true,

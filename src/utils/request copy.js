@@ -44,6 +44,7 @@ service.interceptors.request.use(config => {
             }
         }
     }
+    console.log(config)
     return config
 }, error => {
     console.log(error)
@@ -118,3 +119,5 @@ service.interceptors.response.use(res => {
         return Promise.reject(error)
     }
 )
+
+export default service
