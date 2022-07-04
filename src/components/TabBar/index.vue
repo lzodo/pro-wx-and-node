@@ -43,6 +43,9 @@ export default {
             default: "/home",
         },
     },
+    mounted(){
+        console.log(this.pagePath)
+    }
 };
 </script>
 

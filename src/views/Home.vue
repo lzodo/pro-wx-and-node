@@ -1,9 +1,16 @@
 <template>
     <div class="bar-home bar-page-warp">
         <Header></Header>
-        <LyTab></LyTab>
+        <LyTab :data="topBarData"></LyTab>
         <div class="bar-main wrapper">
             <div class="wrapper-cen">
+                <Swiper></Swiper>
+                <Swiper></Swiper>
+                <Swiper></Swiper>
+                <Swiper></Swiper>
+                <Swiper></Swiper>
+                <Swiper></Swiper>
+                <Swiper></Swiper>
                 <Swiper></Swiper>
                 <HomeIcons></HomeIcons>
             </div>
@@ -37,10 +44,12 @@ export default {
         Swiper,
         HomeIcons
     },
-    mounted() {
+    created(){
         getTopBar().then((res)=>{
             this.topBarData = res.list;
         })
+    },
+    mounted() {
         const bs = new BScroll(".wrapper", {
             // pullUpLoad: true,
             // scrollbar: true,

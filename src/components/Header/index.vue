@@ -3,7 +3,7 @@
         <div class="logo flexc">
             <span class="iconfont">&#xe601;</span>
         </div>
-        <div class="search">
+        <div class="search" @click="routerPush('/search')">
             <div class="ico flexc">
                 <span class="iconfont flexc">&#xe617;</span>
             </div>
